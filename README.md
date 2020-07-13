@@ -1,3 +1,9 @@
+# It was forked from Prettier repo
+
+This fork have only one change, after Prettier has been formated the code it will call the command **"eslint.executeAutofix"** of the eslint extension to fix all eslint fixable rules.
+
+🔥 Code ⚡ prettier ⚡ eslint --fix ✨ Formatted Code ✨
+
 # Prettier Formatter for Visual Studio Code
 
 [Prettier](https://prettier.io/) is an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary.

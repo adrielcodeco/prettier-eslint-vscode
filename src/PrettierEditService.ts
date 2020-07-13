@@ -8,6 +8,7 @@ import {
   TextDocument,
   TextEdit,
   workspace,
+  commands,
 } from "vscode";
 import { ConfigResolver, RangeFormattingOptions } from "./ConfigResolver";
 import { IgnorerResolver } from "./IgnorerResolver";
@@ -318,6 +319,9 @@ export default class PrettierEditService implements Disposable {
 
     try {
       const formattedText = prettierInstance.format(text, prettierOptions);
+
+      await commands.executeCommand("eslint.executeAutofix");
+
       this.statusBarService.updateStatusBar(FormattingResult.Success);
 
       return formattedText;

@@ -1,9 +1,9 @@
 {
-  "name": "prettier-vscode",
-  "displayName": "Prettier - Code formatter",
-  "description": "Code formatter using prettier",
+  "name": "prettier-eslint-vscode",
+  "displayName": "Prettier+ESLint - Code formatter + Linter",
+  "description": "Code formatter using prettier and linter using eslint",
   "version": "5.1.3",
-  "publisher": "esbenp",
+  "publisher": "codeco",
   "author": "Prettier <@prettiercode>",
   "galleryBanner": {
     "color": "#ffe04b",
@@ -24,7 +24,9 @@
   "keywords": [
     "multi-root ready",
     "prettier",
+    "eslint",
     "formatter",
+    "linter",
     "javascript",
     "js",
     "jsx",
@@ -53,7 +55,8 @@
     "yml"
   ],
   "categories": [
-    "Formatters"
+    "Formatters",
+    "Linters"
   ],
   "activationEvents": [
     "*"
